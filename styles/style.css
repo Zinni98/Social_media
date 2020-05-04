@@ -18,19 +18,62 @@ h4{
     margin-top: 0.3rem;
 }
 
-.content{
-    position:relative;
-    max-width: 1440px;
-    width: 90%;
-    margin: 0 auto;
-}
-
-.header-box{
-    display: inline-block;
-}
 header{
     position: relative;
     margin: auto;
+}
+
+@media all and (min-width:1440px){
+    .content{
+        position:relative;
+        max-width: 1440px;
+        min-width: 1440px;
+        margin: 0 auto;
+    }
+    .header-box{
+        display: inline-block;
+    }
+    .toggle-box{
+        position: absolute;
+        top: calc(50% - 20px);
+        right: 1%;
+    }
+    
+
+}
+
+@media all and (min-width: 720px ) and (max-width:1439px){
+    .content{
+        position:relative;
+        max-width: 720px;
+        min-width: 720px;
+        margin: 0 auto;
+    }
+    .header-box{
+        display: inline-block;
+    }
+    .toggle-box{
+        position: absolute;
+        top: calc(50% - 20px);
+        right: 1%;
+    }
+    
+}
+
+
+@media all and (min-width: 360px ) and (max-width:719px)
+{
+    .content{
+        position:relative;
+        max-width: 360px;
+        min-width: 360px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .header-box{
+        display: block;
+    }
+    
 }
 
 
@@ -77,12 +120,6 @@ header{
     background-color: hsl(228, 28%, 20%);
 }
 
-.toggle-box{
-    position: absolute;
-    top: calc(50% - 20px);
-    right: 1%;
-}
-
 .dark-mode-label{
     position: relative;
     font-weight: 700;
@@ -114,6 +151,10 @@ header{
     height: 250px;
 }
 
+.card-small{
+    width: 300px;
+    height: 150px;
+}
 
 .social{
     margin-top:20px;
@@ -127,13 +168,125 @@ header{
     margin-right: 3px;
 }
 
+.followers{
+    text-transform: uppercase;
+}
+
+.followers > p:nth-child(1){
+    margin-top: 35px;
+    font-size:60px;
+    margin-bottom: 3px;
+    font-weight: 700;
+}
+
+.followers > p:nth-child(2){
+    font-size: 14;
+    margin-top: 3px;
+    letter-spacing: 0.4em;
+}
+
+.rate-change{
+    margin-top: 30px;
+    font-size: 14px;
+}
+.up{
+    color: #3eda82;
+}
+.down{
+    color: hsl(356, 69%, 56%);
+}
+.rate-change>img{
+    position: relative;
+    bottom: 3px;
+}
+
+.card-facebook{
+    border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.card-twitter{
+    border-top: 5px solid hsl(195, 100%, 50%);
+}
+
+.card-instagram{
+    border-top: 5px solid;
+    border-image-source:  linear-gradient(100deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-image-slice: 1;
+}
+
+.card-youtube{
+    border-top: 5px solid hsl(356, 69%, 56%);
+}
+
+
+
+
+/* SMALL CARDS CODE*/
+.box-small-card{
+    height: 60%;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 20%;
+}
+
+.box-small-card>p:nth-child(1){
+    display: inline;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    margin-top: 0px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.box-small-card>img:nth-child(2){
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin-top: 0px;
+}
+
+.box-small-card>p:nth-child(3){
+    display: inline;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.box-small-card>p:nth-child(4){
+    display: inline;
+    position: absolute;
+    right: 0px;
+    bottom: 5px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.box-small-card>p:nth-child(4)> img{
+    display: inline;
+    position: absolute;
+    bottom: 6px;
+    left: -10px;
+    margin-bottom: 0px;
+}
+
+/*END OF SMALL CARDS CODE*/
+
+
 /*END OF CARDS CODE*/
 
 
 
 /* LIGHT THEME*/
 
-
+.theme-text-secondary{
+    color: hsl(228, 12%, 44%);
+}
 
 /* END OF LIGHT THEME */
 
@@ -159,5 +312,4 @@ header{
 }
 
 /* END OF DARK SIDE OF THE MOON */
-
 
